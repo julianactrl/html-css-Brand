@@ -24,12 +24,14 @@ html, body {
 }
 
 nav {
-    display: flex;
+    display: flex; 
     background-color: var(--green-color);
     padding: var(--space);
     color: var(--white-color);
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    min-height: 60px;
 
 }
 
@@ -38,7 +40,7 @@ nav ul {
 
 }
 nav li {
-    padding-left: 20px;
+    padding-right: 20px;
     list-style: none;
     
 }
@@ -51,36 +53,42 @@ nav li a:hover{
 color: var(--white-color);
 }
 
+hr{
+    opacity: .2;
+  }
+
 /* ----------- main section----------------------- */
 
 .main_section {
-    padding: 20%;
+    padding: 15%;
     text-align: center;
 }
 
+/* ---------------------------- Products ---*/
 .products {
     background-image: url("../imagenes/curve.png");
-    max-height: 50px;
+    max-height: 100px;
     background-size: cover;
     background-position: center top;
-    padding: 20%;
+    padding: 15%;
     display: flex;
+    background-repeat: no-repeat;
 
 }
 
 .product {
-    padding: var(--space);
-    margin-top: -240px;
+    padding: 10px;
+    margin-top: -226px;
 }
 
 .product .content {
     background-color: var(--white-color);
-    padding: 15px;
-    box-shadow: var(--box);
+    padding: 20px;
+    box-shadow: 0px 0 2px  #c1bcbc;
 }
-.img_content {
+.image_content {
     text-align: center;
-}
+} 
 .main_button{
     background-color: var(--green-color);
     width: 100%;
@@ -88,104 +96,102 @@ color: var(--white-color);
     font-size: 17px;
     color:var(--white-color);
     border: 0;
-    cursor: pointer;
     border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
 }
 .main_button:hover{
     background-color: #5e9e22;
 }
+p {
+    text-align: center;
+    font-size: var(--normal);
+}
 
-/* ------------------  Home bar */
-.home_bar {
-    background-color: rgb(241, 234, 234);
-    display: inline-flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 500px;
-    /*margin-bottom: 15px;*/
+label{
+    font-size: var(--normal);
+    padding: 5px;
+    display: block;
 }
-.home_uno {
-    width: 300px;
-    height: 300px;
-    padding: 10px;
-    
-}
-.image_home {
-    width: 200px;
-    height: 200px;
+  
+h1 {
+    text-align: center;
+  }
+
+/* ------------------  beneficios */
+.beneficios {
+    padding: 10%;
     display: flex;
-    border-radius: 30%;
-    align-content: center;
-    margin-left: 40px;
 }
-.parrafo_home {
+.beneficio {
     text-align: center;
-    font-size: 12px;
+    padding: 20px;    
+}
+
+.beneficio img {
+    max-height: 100px;
+}
+.text-beneficio {
+    text-align: justify;
 }  
-h3 {
-    text-align: center;
-}
+
+
 /* -------------------Menciones */
 
-h2 {
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    /*background-color: ivory;*/
-    margin: 0;
-}
-.h2 {
-    background-color: ivory;
-    margin-top: 0;
-    margin-bottom: 0;
-}
 .mentions {
-    background-color: ivory;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
+   display: flex;
+   padding: 5%;
+}
+
+.mention img {
     width: 100%;
-    height: 500px;
-    margin-top: 0;
-
-}
-.mention_uno {
-    height: 300px;
-    width: 300px;
 }
 
-.img_mention {
-    width: 180px;
-    height: 190px;
-    display: flex;
-    border-radius: 50%;
-    align-content: center;
-    margin-left: 45px;
+.mention_title {
+    text-align: center;
 }
+
+.mention{
+    padding: var(--space);
+}
+.content_mention{
+    box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+/* ----------------------venta */
+
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.data{
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+}
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+.modulo_pago_img {
+    max-width: 100px;
+    text-align: center;
+    width: 100%;
+    margin: auto;    
+}
+
 /* ---------------------footer */
-footer {
-    height: 100px;
-    background-color: green;
-}
-
-.contacto {
+footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: large;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: #313337;
-
-}
+    font-size: var(--normal);
+    background-color: var(--black-color);
+    padding: var(--space);
+    color: var(--white-color);
+  }
+  .contact a{
+      color: lawngreen;
+  }
+  
